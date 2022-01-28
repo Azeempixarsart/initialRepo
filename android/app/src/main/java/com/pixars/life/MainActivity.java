@@ -1,4 +1,4 @@
-package com.awesomproject;
+package com.pixars.life;
 import android.os.Bundle;
 
 import com.facebook.react.ReactActivity;
@@ -17,6 +17,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "AwesomProject";
+    return "Pixarsart";
   }
 }

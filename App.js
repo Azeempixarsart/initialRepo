@@ -5,6 +5,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Home from './screens/Home';
 import Login from './screens/Login';
+import SignUp from './screens/SignUp';
+import Forgetpassword from './screens/Forgetpassword';
 
 const Stack=createStackNavigator();
 
@@ -18,9 +20,13 @@ SplashScreen.hide();
       <Stack.Navigator 
       screenOptions={{ headerShown: false}}
       >
+        
+        
         <Stack.Screen name='login' component={Login}/>
+        <Stack.Screen name='signup'component={SignUp}/>
         <Stack.Screen name='home' component={Home}/>
-
+        <Stack.Screen name='forgetpassword'component={Forgetpassword}/>
+        
       </Stack.Navigator>
 
     </NavigationContainer>

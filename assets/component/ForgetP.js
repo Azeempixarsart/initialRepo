@@ -3,16 +3,17 @@ import React, { useState } from 'react';
 import { Globalstyle } from './Globalstyle';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon2 from 'react-native-vector-icons/AntDesign';
+
 import {
     widthPercentageToDP as wp,
     heightPercentageToDP as hp,
   } from "react-native-responsive-screen";
+
   
   
 
-const TInput = () => {
+const ForgetP = () => {
     const [text, onChangeText] = useState('');
-    const [text2, onChangeText2] = useState('');
     return (
         <View style={{height:wp("80%"), width:wp("100%"), backgroundColor:'transparent', alignItems:'center',justifyContent:'center'}}>
             <View style={Globalstyle.Tinput}>
@@ -20,30 +21,26 @@ const TInput = () => {
                 <TextInput
                     onChangeText={onChangeText}
                     value={text}
-                    placeholder='Your Email'
+                    placeholder='Write Your Email'
                     style={{left:20,fontWeight:'400',color:'#000'}}
                 />
             </View>
-            {/* //Second input */}
-            <View style={Globalstyle.Tinput}>
-               <Icon2 name='unlock' size={25} style={{left:20}} />
-                <TextInput
-                    onChangeText={onChangeText2}
-                    value={text2}
-                    placeholder='Password'
-                    style={{left:20,fontWeight:'400',color:'#000'}}
-                />
-            </View >
+          
             <View style={Globalstyle.TinputButton}>
-                <Text style={{fontSize:20,color:'#fff'}} >Sign in</Text>
+                <Text style={{fontSize:20,color:'#fff'}} >Send Link</Text>
                 <Icon2 name='arrowright' size={20} style={{color:'#fff'}}/>
 
             </View >
+            <View>
+                <Text style={{alignItems:'center',fontSize:15,color:'#000000'}}>
+                    Check Your Email to Reset Your Password
+                </Text>
+            </View>
            
         </View>
     );
 };
 
-export default TInput;
+export default ForgetP;
 
 const styles = StyleSheet.create({});

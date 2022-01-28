@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.awesomproject">
+  package="com.pixars.life">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

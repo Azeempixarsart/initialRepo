@@ -6,7 +6,6 @@ export const Globalstyle=StyleSheet.create({
         
     },
     Tinput: {
-        height: 60,
         width:'90%',
         margin:10,
         borderWidth: 2,
@@ -24,7 +23,11 @@ export const Globalstyle=StyleSheet.create({
         alignSelf:'center',
         fontWeight:'400',
         color:'black',
-        fontSize:20
+        fontSize:20,
+        marginTop: 20,
+       
+
+      
       },
       TinputButton:{
         height: 60,
@@ -40,5 +43,32 @@ export const Globalstyle=StyleSheet.create({
         backgroundColor:'#000',
         justifyContent:'center',
 
-      }
+      },
+      TinputButton2:{
+        height: 60,
+        width:'90%',
+        margin:15,
+        borderWidth: 2,
+        marginHorizontal:20,
+        // padding: 10,
+        borderRadius:35,
+        borderColor:'#000',
+        flexDirection:'row',
+        alignItems:'center',
+        // backgroundColor:'#000',
+        justifyContent:'center',
+        marginTop:30,
+
+      },
+      text2:{
+        alignSelf:'center',
+        fontWeight:'400',
+        color:'black',
+        fontSize:20,
+        marginTop: 20,
+        marginBottom:10
+
+      
+      },
+     
 })
