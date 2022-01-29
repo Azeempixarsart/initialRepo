@@ -2,7 +2,7 @@ import { StyleSheet, Image, Text, View, LogBox, Pressable } from 'react-native';
 import React from 'react';
 import { Globalstyle } from '../assets/component/Globalstyle';
 import TInput from '../assets/component/TInput';
-import SignUp from './SignUp';
+// import SignUp from './SignUp';
 // import Forgetpassword from './Forgetpassword';
 
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scrollview';
@@ -10,7 +10,6 @@ import {
     widthPercentageToDP as wp,
     heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
-import { NavigationContainer } from '@react-navigation/native';
 
 LogBox.ignoreAllLogs();
 const Login = ({navigation}) => {
@@ -34,6 +33,10 @@ const Login = ({navigation}) => {
                 <Pressable style={{height:wp("20%"),width:wp("100%"),alignItems:'center'}}>
             <Text style={{ fontSize: 15, fontWeight: '300', color: '#000',}}onPress={()=>navigation.navigate('forgetpassword')}>Forgot Password</Text>
             </Pressable>
+            <Pressable style={{height:wp("20%"),width:wp("100%"),alignItems:'center'}}>
+            <Text style={{ fontSize: 15, fontWeight: '300', color: '#000',}}onPress={()=>navigation.navigate('home')}>Web View</Text>
+            </Pressable>
+         
 
 
             </KeyboardAwareScrollView>

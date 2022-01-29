@@ -16,7 +16,7 @@ const SignUp = ({navigation}) => {
         <View style={Globalstyle.container}>
             <KeyboardAwareScrollView style={Globalstyle.container}>
                 <Pressable onPress={() => navigation.goBack()} style={{ margin: 10 }}>
-                    <Icon3 name='arrow-back' size={30} />
+                    <Icon3 name='arrow-back' size={40 }style={{color:'#000'}} />
                 </Pressable>
                 <View style={{ height: wp("50%"), width: wp("100%"), alignItems: 'center', justifyContent: 'flex-end' }}>
                     <Image source={require('../assets/Img/login.png')} style={{ height: 100, width: 100 }} />

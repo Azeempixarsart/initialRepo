@@ -32,7 +32,7 @@ const ForgetP = () => {
 
             </View >
             <View>
-                <Text style={{alignItems:'center',fontSize:15,color:'#000000'}}>
+                <Text style={{alignItems:'center',fontSize:13,color:'#000000'}}>
                     Check Your Email to Reset Your Password
                 </Text>
             </View>

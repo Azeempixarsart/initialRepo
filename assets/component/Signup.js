@@ -14,6 +14,8 @@ import {
 const Signup = () => {
     const [text, onChangeText] = useState('');
     const [text2, onChangeText2] = useState('');
+    const [text3, onChangeText3] = useState('');
+    const [text4, onChangeText4] = useState('');
     return (
         <View style={{ height: wp("130%"), width: wp("100%"), alignItems: 'center', justifyContent: 'center' }}>
             {/* Name */}
@@ -30,8 +32,8 @@ const Signup = () => {
             <View style={Globalstyle.Tinput}>
                 <Icon name='email-outline' size={25} style={{ left: 20 }} />
                 <TextInput
-                    onChangeText={onChangeText}
-                    value={text}
+                    onChangeText={onChangeText2}
+                    value={text2}
                     placeholder='Your Email'
                     style={{ left: 20, fontWeight: '400', color: '#000' }}
                 />
@@ -40,8 +42,8 @@ const Signup = () => {
             <View style={Globalstyle.Tinput}>
                 <Icon2 name='unlock' size={25} style={{ left: 20 }} />
                 <TextInput
-                    onChangeText={onChangeText2}
-                    value={text2}
+                    onChangeText={onChangeText3}
+                    value={text3}
                     placeholder='Password'
                     style={{ left: 20, fontWeight: '400', color: '#000' }}
                 />
@@ -50,8 +52,8 @@ const Signup = () => {
             <View style={Globalstyle.Tinput}>
                 <Icon2 name='unlock' size={25} style={{ left: 20 }} />
                 <TextInput
-                    onChangeText={onChangeText2}
-                    value={text2}
+                    onChangeText={onChangeText4}
+                    value={text4}
                     placeholder='Confirm Password'
                     style={{ left: 20, fontWeight: '400', color: '#000' }}
                 />

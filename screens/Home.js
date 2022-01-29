@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
+import {WebView} from 'react-native-webview';
 
 const Home = () => {
   return (
-    <View style={styles.container}>
-      <Text>home</Text>
-    </View>
+    <WebView source={{ uri: 'https://reactnative.dev/' }} />
+   
   );
 };
 
@@ -17,3 +17,15 @@ const styles = StyleSheet.create({
         backgroundColor:'red',
     }
 });
+
+
+// import React, { Component } from 'react';
+// import { StyleSheet, Text, View } from 'react-native';
+// import { WebView } from 'react-native-webview';
+
+// // ...
+// export default class Home extends Component {
+//   render() {
+//     return <WebView source={{ uri: 'https://reactnative.dev/' }} />;
+//   }
+// }
